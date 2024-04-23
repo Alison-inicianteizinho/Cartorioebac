@@ -148,7 +148,8 @@ int main ()
     	printf ("Escolha uma das opções a seguir: \n\n");
     	printf ("1 - Registrar nome!\n");
     	printf ("2 - Consultar nomes!\n");
-    	printf ("3 - excluir nomes!\n\n"); 
+    	printf ("3 - excluir nomes!\n"); 
+    	printf ("4 - sair do menu!\n\n");
 		printf("escolha: \n"); // final do menu
     
     	scanf("%d", &escolha ); // armazenamento das variaveis
@@ -167,7 +168,13 @@ int main ()
 			case 3:
 				excluir();
 			break; // finalização do caso.
-				
+			
+			case 4:
+				printf("Obrigado por ultilizar o menu!");
+			return 0;
+			break;
+			
+			
 			default: // caso nao seja nenhuma das opções registradas...
 				printf ("Sinto muito, essa opção nao esta disponivel! \n");
 				system ("pause");
